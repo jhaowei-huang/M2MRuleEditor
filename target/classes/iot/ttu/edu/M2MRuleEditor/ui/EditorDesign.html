@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;theme&quot;}">
+  <meta charset="UTF-8" name="package-mapping" content="iot_ttu_edu_m2mruleeditor_ui:iot.ttu.edu.M2MRuleEditor.ui">
+ </head> 
+ <body> 
+  <vaadin-horizontal-split-panel split-position="70%" min-split-position="70%" max-split-position="80%"> 
+   <vaadin-vertical-layout size-full> 
+    <vaadin-vertical-split-panel min-split-position="25%" max-split-position="75%" :expand> 
+     <vaadin-vertical-layout caption="Rule" spacing size-full margin-left margin-right margin-top _id="ruleLayout"> 
+      <vaadin-horizontal-layout spacing> 
+       <vaadin-button icon="fonticon://FontAwesome/f044" plain-text _id="renameButton"></vaadin-button> 
+       <vaadin-label style-name="huge bold" size-auto plain-text _id="ruleNameLabel">
+         Rule 
+       </vaadin-label> 
+      </vaadin-horizontal-layout> 
+     </vaadin-vertical-layout> 
+     <vaadin-vertical-layout spacing size-full margin-left margin-right margin-top _id="actionLayout"> 
+      <vaadin-label style-name="huge bold" size-auto plain-text>
+        THEN 
+      </vaadin-label> 
+     </vaadin-vertical-layout> 
+    </vaadin-vertical-split-panel> 
+    <vaadin-horizontal-layout spacing :bottom :right> 
+     <vaadin-button plain-text _id="saveButton" :middle :center>
+       Save Rule 
+     </vaadin-button> 
+     <vaadin-button plain-text _id="resetButton" :middle :center>
+       Reset 
+     </vaadin-button> 
+    </vaadin-horizontal-layout> 
+   </vaadin-vertical-layout> 
+   <vaadin-vertical-layout size-full> 
+    <iot_ttu_edu_m2mruleeditor_ui-rules-table size-full _id="rulesTable" :expand></iot_ttu_edu_m2mruleeditor_ui-rules-table> 
+    <vaadin-button plain-text _id="applyButton" :bottom :right>
+      Apply 
+    </vaadin-button> 
+   </vaadin-vertical-layout> 
+  </vaadin-horizontal-split-panel>  
+ </body>
+</html>

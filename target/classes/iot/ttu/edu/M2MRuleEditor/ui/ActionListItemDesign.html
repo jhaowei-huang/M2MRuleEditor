@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;theme&quot;}">
+ </head> 
+ <body> 
+  <vaadin-vertical-layout spacing size-full> 
+   <vaadin-horizontal-layout spacing width-full> 
+    <vaadin-label style-name="large bold" size-auto plain-text _id="textLabel" :middle :center :expand="0.05">
+      SET 
+    </vaadin-label> 
+    <vaadin-combo-box item-caption-mode="id" width-full _id="actuatorComboBox" :middle :expand="0.3"> 
+     <option>Option 1</option> 
+     <option>Option 2</option> 
+     <option>Option 3</option> 
+    </vaadin-combo-box> 
+    <vaadin-combo-box item-caption-mode="id" width-full _id="actuatorResourceComboBox" :middle :expand="0.2"> 
+     <option>Option 1</option> 
+     <option>Option 2</option> 
+     <option>Option 3</option> 
+    </vaadin-combo-box> 
+    <vaadin-label style-name="large bold" size-auto plain-text :middle :center :expand="0.05">
+      TO 
+    </vaadin-label> 
+    <vaadin-text-field width-full _id="valueTextField" :middle :expand="0.2"></vaadin-text-field> 
+    <vaadin-horizontal-layout :middle :center> 
+     <vaadin-button width-full plain-text _id="addButtun" :middle :right>
+       + 
+     </vaadin-button> 
+     <vaadin-button width-full plain-text _id="removeButton" :middle :right>
+       - 
+     </vaadin-button> 
+    </vaadin-horizontal-layout> 
+   </vaadin-horizontal-layout> 
+  </vaadin-vertical-layout>  
+ </body>
+</html>
